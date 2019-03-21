@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>denominations</title>
+	<script type="text/javascript">
+		function amountTocoins(arr){
+			var amt=46;
+			var result=[];
+			for(var i=0;i<=arr.length;i++)
+			{
+				num=amt/arr[i];
+				amt=amt%arr[i];
+				for(var j=1;j<=num;j++)
+				{
+					result.push(arr[i]);
+				}
+			}
+			return result.join(',');
+		}
+		console.log(amountTocoins([25,10,5,2,1]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

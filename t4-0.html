@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second</title>
+	<script type="text/javascript">
+		function second(arr)
+		{
+			arr.sort(function(x,y)
+			{
+				return x-y;
+			});
+			var ip=[arr[0]];
+			var result=[];
+			for(var j=1;j<arr.length;j++)
+			{
+				if(arr[j-1]!=arr[j])
+				{
+					ip.push(arr[j]);
+				}
+			}
+			result.push(ip[1],ip[ip.length-2]);
+			return result.join(',');
+		}
+		console.log(second([1,2,3,4,5]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

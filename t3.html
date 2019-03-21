@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Identity matrix</title>
+	<script type="text/javascript">
+		function matrix(){
+		var row=Number(document.getElementById('row').value);
+		var col=Number(document.getElementById('col').value);
+		for(var i=1;i<=row;i++)
+		{
+			for(var j=1;j<=col;j++)
+			{
+				if(i==j)
+				{
+					console.log("1");
+					document.write("1");
+				}
+				else{
+					console.log("0");
+					document.write("0");
+				}
+			}document.write("<br>");
+		}
+	}
+	</script>
+</head>
+<body>
+<form>
+ 	Row<input type="number" name="sname" id="row">
+ 	Column<input type="number" name="sname" id="col">
+ 	<button type="button" onclick="matrix()" name="button">Identity Matrix</button>
+ </form>
+</body>
+</html>

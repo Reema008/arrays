@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>unique</title>
+	<script type="text/javascript">
+		function unique()
+		{
+			var str=String(document.getElementById("str").value);
+			var ustr="";
+			var k;
+			for(var i=0;i<str.length;i++)
+		 	{
+		 		if(i==0)
+		 		{
+		 			ustr=ustr+str[i];
+		 		}
+		 		else
+		 		{
+		 			for(var j=0;j<ustr.length;j++)
+		 			{
+		 				k=0;
+		 				if(ustr[j]==str[i])
+		 				{
+		 					k=1;
+		 					break;
+		 				}
+		 			}
+		 			if(k==0)
+		 			{
+		 				ustr=ustr+str[i];
+		 			}
+		 		}
+			}
+			console.log(ustr);
+			document.write(ustr);
+		}
+	</script>
+</head>
+<body>
+<form>
+	String<input type="text" name="sname" id="str" >
+	<button type="button" onclick="unique()" name="button">Unique Characters</button>
+	<p id="result"></p>
+</form>
+</body>
+</html>
+	</script>
+</head>
+<body>
+
+</body>
+</html>

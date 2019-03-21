@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime number</title>
+	<script type="text/javascript">
+		function prime(){
+			var c=0;
+			var num=Number(document.getElementById('num').value);
+			for(var i=1;i<=num;i++)
+			{
+				if(num%i==0)
+					c++;
+			}
+			if(c==2){
+				console.log("YES");
+				document.write("YES");
+			}
+			else{
+				console.log("NO");
+				document.write("NO");
+			}
+		}
+	</script>
+</head>
+<body>
+ <form>
+ 	Number<input type="number" name="sname" id="num">
+ 	<button type="button" onclick="prime()" name="button">Is Prime</button>
+ </form>
+</body>
+</html>

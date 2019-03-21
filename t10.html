@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Larger</title>
+	<script type="text/javascript">
+		function greater() {
+			var num=Number(document.getElementById('num').value);
+			var arr=[1,45,78,465,245,32]
+			for(var i=0;i<arr.length;i++)
+			{
+				if(arr[i]>num)
+				{
+					console.log(arr[i]);
+					document.write(arr[i]);
+					document.write("<br>");
+				}
+			}
+		}
+		</script>
+</head>
+<body>
+<form>
+ 	Number<input type="number" name="sname" id="num">
+ 	<button type="button" onclick="greater()" name="button">Greater Numbers</button>
+ </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factors</title>
+	<script type="text/javascript">
+		function perfect() {
+			var sum=0;
+			var num=Number(document.getElementById('num').value);
+			for(var i=1;i<num;i++)
+			{
+				if(num%i==0)
+				{
+					sum=sum+i;
+				}
+			}
+			if(sum==num){
+				console.log("YES");
+				document.write("YES");
+			}
+			else{
+				console.log("NO");
+				document.write("NO");
+			}
+		}
+	</script>
+</head>
+<body>
+<form>
+ 	Number<input type="number" name="sname" id="num">
+ 	<button type="button" onclick="perfect()" name="button">Is Perfect</button>
+ </form>
+</body>
+</html>
